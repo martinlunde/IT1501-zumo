@@ -34,8 +34,7 @@ void loop() {
   Serial.println(" ");
   Serial.println(right_sensor);
   Serial.println(left_sensor);
-  delay(600);
-
+  
   if(right_sensor > 0){
     digitalWrite(ledPin1, HIGH);
   }else{
@@ -47,4 +46,5 @@ void loop() {
   }else{
     digitalWrite(ledPin2, LOW);
   }
+  delay(600);
 }
